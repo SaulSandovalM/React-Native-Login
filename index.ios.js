@@ -7,7 +7,7 @@ import {
   TouchableHighlight,
   Navigator
 } from 'react-native';
-import NavigationExperimental from 'react-native-deprecated-custom-components';
+//import {Navigator} from 'react-navigation';
 import Splash from './Splash';
 import Login from './src/components/Login/Login';
 import Inicio from './src/components/Inicio/Inicio';
@@ -62,8 +62,8 @@ export default class Autolavado extends Component {
       }
     }
     navigationBar={
-           <NavigationExperimental.Navigator.NavigationBar
-            routeMapper={NavigationBarRouteMapper}/>
+           <Navigator.NavigationBar
+            routeMapper={NavigatorBarRouteMapper}/>
         }
     />//cierra navigator
     )
